@@ -128,7 +128,7 @@
         "kind": 5,
         "importPath": "real_time",
         "description": "real_time",
-        "peekOfCode": "sfr = SimpleFacerec()\nsfr.load_encoding_images(\"images/\")\n#Load Camera\ncap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    #Detect Faces\n    face_locations, face_names = sfr.detect_known_faces(frame)\n    for face_loc, name in zip(face_locations, face_names):\n        top, right, bottom, left = face_loc[0], face_loc[1], face_loc[2], face_loc[3]",
+        "peekOfCode": "sfr = SimpleFacerec()\nsfr.load_encoding_images(\"images/\")\n#Load Camera\ncap = cv2.VideoCapture(0)\ncap.set(cv2.CAP_PROP_FRAME_WIDTH, 1440)\ncap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)\nwhile True:\n    ret, frame = cap.read()\n    #Detect Faces\n    face_locations, face_names = sfr.detect_known_faces(frame)",
         "detail": "real_time",
         "documentation": {}
     },
@@ -137,7 +137,7 @@
         "kind": 5,
         "importPath": "real_time",
         "description": "real_time",
-        "peekOfCode": "cap = cv2.VideoCapture(0)\nwhile True:\n    ret, frame = cap.read()\n    #Detect Faces\n    face_locations, face_names = sfr.detect_known_faces(frame)\n    for face_loc, name in zip(face_locations, face_names):\n        top, right, bottom, left = face_loc[0], face_loc[1], face_loc[2], face_loc[3]\n        #y1, x1, y2, x2\n        cv2.putText(frame, name,(right,top - 10),cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 2)\n        cv2.rectangle(frame, (right, top), (left, bottom),(230, 230, 250), 4)",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\ncap.set(cv2.CAP_PROP_FRAME_WIDTH, 1440)\ncap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)\nwhile True:\n    ret, frame = cap.read()\n    #Detect Faces\n    face_locations, face_names = sfr.detect_known_faces(frame)\n    for face_loc, name in zip(face_locations, face_names):\n        top, right, bottom, left = face_loc[0], face_loc[1], face_loc[2], face_loc[3]\n        #y1, x1, y2, x2",
         "detail": "real_time",
         "documentation": {}
     },
