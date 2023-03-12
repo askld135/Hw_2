@@ -1,14 +1,5 @@
 [
     {
-        "label": "numpy",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy",
-        "description": "numpy",
-        "detail": "numpy",
-        "documentation": {}
-    },
-    {
         "label": "cv2",
         "kind": 6,
         "isExtraImport": true,
@@ -29,10 +20,55 @@
     {
         "label": "img",
         "kind": 5,
-        "importPath": "face_recognition",
-        "description": "face_recognition",
-        "peekOfCode": "img = cv2.imread(\"Michael_Douglas.jpg\")\ncv2.imshow(\"Img\", img)",
-        "detail": "face_recognition",
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "img = cv2.imread(\"Michael_Douglas.jpg\")\nrgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)\nimg_encoding = face_recognition.face_encodings(rgb_img)[0]\nimg2 = cv2.imread(\"images/Keum-Kang-seon.jpg\")\nrgb_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)\nimg_encoding = face_recognition.face_encodings(rgb_img2)[0]\ncv2.imshow(\"Img\", img)\ncv2.waitKey(0)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "rgb_img",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "rgb_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)\nimg_encoding = face_recognition.face_encodings(rgb_img)[0]\nimg2 = cv2.imread(\"images/Keum-Kang-seon.jpg\")\nrgb_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)\nimg_encoding = face_recognition.face_encodings(rgb_img2)[0]\ncv2.imshow(\"Img\", img)\ncv2.waitKey(0)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "img_encoding",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "img_encoding = face_recognition.face_encodings(rgb_img)[0]\nimg2 = cv2.imread(\"images/Keum-Kang-seon.jpg\")\nrgb_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)\nimg_encoding = face_recognition.face_encodings(rgb_img2)[0]\ncv2.imshow(\"Img\", img)\ncv2.waitKey(0)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "img2",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "img2 = cv2.imread(\"images/Keum-Kang-seon.jpg\")\nrgb_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)\nimg_encoding = face_recognition.face_encodings(rgb_img2)[0]\ncv2.imshow(\"Img\", img)\ncv2.waitKey(0)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "rgb_img2",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "rgb_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2RGB)\nimg_encoding = face_recognition.face_encodings(rgb_img2)[0]\ncv2.imshow(\"Img\", img)\ncv2.waitKey(0)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "img_encoding",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "img_encoding = face_recognition.face_encodings(rgb_img2)[0]\ncv2.imshow(\"Img\", img)\ncv2.waitKey(0)",
+        "detail": "main",
         "documentation": {}
     }
 ]
