@@ -16,7 +16,7 @@ while True:
     for face_loc, name in zip(face_locations, face_names):
         top, right, bottom, left = face_loc[0], face_loc[1], face_loc[2], face_loc[3]
         #y1, x1, y2, x2
-        cv2.putText(frame, name,(right,top - 10),cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 2)
+        cv2.putText(frame, name,(right,top - 10),cv2.FONT_HERSHEY_DUPLEX, 1, (138,43,226), 2)
         cv2.rectangle(frame, (right, top), (left, bottom),(230, 230, 250), 4)
     
     cv2.imshow("Frame", frame)
