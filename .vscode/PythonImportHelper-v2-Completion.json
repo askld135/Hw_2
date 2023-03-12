@@ -1,0 +1,38 @@
+[
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "face_recognition",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "face_recognition",
+        "description": "face_recognition",
+        "detail": "face_recognition",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "face_recognition",
+        "description": "face_recognition",
+        "peekOfCode": "img = cv2.imread(\"Michael_Douglas.jpg\")\ncv2.imshow(\"Img\", img)",
+        "detail": "face_recognition",
+        "documentation": {}
+    }
+]
